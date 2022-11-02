@@ -28,72 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelRight = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblusername = new System.Windows.Forms.Label();
-            this.txtusername = new System.Windows.Forms.TextBox();
             this.lblpassword = new System.Windows.Forms.Label();
-            this.txtpassword = new System.Windows.Forms.TextBox();
             this.btnlogin = new System.Windows.Forms.Button();
             this.lblklogin = new System.Windows.Forms.LinkLabel();
             this.btncancel = new System.Windows.Forms.Button();
+            this.pbxBeMyPet = new System.Windows.Forms.PictureBox();
+            this.pbxBackground = new System.Windows.Forms.PictureBox();
+            this.txtPassword = new BeMyPet.RJControls.RJTextBox();
+            this.txtUsername = new BeMyPet.RJControls.RJTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBeMyPet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBackground)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panelRight
-            // 
-            this.panelRight.BackColor = System.Drawing.Color.Transparent;
-            this.panelRight.Location = new System.Drawing.Point(400, 0);
-            this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(400, 501);
-            this.panelRight.TabIndex = 0;
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Tai Le", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(113, 62);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(160, 31);
+            this.lblTitle.Size = new System.Drawing.Size(185, 41);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Login Page";
             // 
             // lblusername
             // 
             this.lblusername.AutoSize = true;
-            this.lblusername.Location = new System.Drawing.Point(114, 134);
+            this.lblusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusername.Location = new System.Drawing.Point(50, 127);
             this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(55, 13);
+            this.lblusername.Size = new System.Drawing.Size(97, 24);
             this.lblusername.TabIndex = 2;
             this.lblusername.Text = "Username";
-            // 
-            // txtusername
-            // 
-            this.txtusername.Location = new System.Drawing.Point(117, 150);
-            this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(170, 20);
-            this.txtusername.TabIndex = 3;
             // 
             // lblpassword
             // 
             this.lblpassword.AutoSize = true;
-            this.lblpassword.Location = new System.Drawing.Point(116, 201);
+            this.lblpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpassword.Location = new System.Drawing.Point(50, 190);
             this.lblpassword.Name = "lblpassword";
-            this.lblpassword.Size = new System.Drawing.Size(53, 13);
+            this.lblpassword.Size = new System.Drawing.Size(92, 24);
             this.lblpassword.TabIndex = 4;
             this.lblpassword.Text = "Password";
             // 
-            // txtpassword
-            // 
-            this.txtpassword.Location = new System.Drawing.Point(119, 217);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(170, 20);
-            this.txtpassword.TabIndex = 5;
-            // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(165, 256);
+            this.btnlogin.Location = new System.Drawing.Point(150, 266);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(75, 23);
+            this.btnlogin.Size = new System.Drawing.Size(120, 30);
             this.btnlogin.TabIndex = 6;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = true;
@@ -101,7 +84,10 @@
             // lblklogin
             // 
             this.lblklogin.AutoSize = true;
-            this.lblklogin.Location = new System.Drawing.Point(126, 299);
+            this.lblklogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblklogin.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblklogin.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.lblklogin.Location = new System.Drawing.Point(135, 319);
             this.lblklogin.Name = "lblklogin";
             this.lblklogin.Size = new System.Drawing.Size(147, 13);
             this.lblklogin.TabIndex = 7;
@@ -110,46 +96,116 @@
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(165, 331);
+            this.btncancel.Location = new System.Drawing.Point(150, 350);
             this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(75, 26);
+            this.btncancel.Size = new System.Drawing.Size(120, 30);
             this.btncancel.TabIndex = 8;
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = true;
+            // 
+            // pbxBeMyPet
+            // 
+            this.pbxBeMyPet.Image = global::BeMyPet.Properties.Resources.BeMyPet;
+            this.pbxBeMyPet.Location = new System.Drawing.Point(0, 383);
+            this.pbxBeMyPet.Name = "pbxBeMyPet";
+            this.pbxBeMyPet.Size = new System.Drawing.Size(129, 108);
+            this.pbxBeMyPet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxBeMyPet.TabIndex = 10;
+            this.pbxBeMyPet.TabStop = false;
+            // 
+            // pbxBackground
+            // 
+            this.pbxBackground.BackgroundImage = global::BeMyPet.Properties.Resources.BackgroundLogin;
+            this.pbxBackground.Location = new System.Drawing.Point(421, 0);
+            this.pbxBackground.Name = "pbxBackground";
+            this.pbxBackground.Size = new System.Drawing.Size(380, 490);
+            this.pbxBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbxBackground.TabIndex = 9;
+            this.pbxBackground.TabStop = false;
+            this.pbxBackground.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbxBackground_MouseDown);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPassword.BorderColor = System.Drawing.Color.Silver;
+            this.txtPassword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPassword.BorderRadius = 10;
+            this.txtPassword.BorderSize = 1;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPassword.Location = new System.Drawing.Point(54, 218);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Multiline = false;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(7);
+            this.txtPassword.PasswordChar = false;
+            this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.Size = new System.Drawing.Size(320, 31);
+            this.txtPassword.TabIndex = 13;
+            this.txtPassword.Texts = "";
+            this.txtPassword.UnderlinedStyle = false;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
+            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtUsername.BorderFocusColor = System.Drawing.Color.Gray;
+            this.txtUsername.BorderRadius = 10;
+            this.txtUsername.BorderSize = 1;
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.ForeColor = System.Drawing.Color.DimGray;
+            this.txtUsername.Location = new System.Drawing.Point(54, 155);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsername.Multiline = false;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Padding = new System.Windows.Forms.Padding(7);
+            this.txtUsername.PasswordChar = false;
+            this.txtUsername.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtUsername.PlaceholderText = "Username";
+            this.txtUsername.Size = new System.Drawing.Size(320, 31);
+            this.txtUsername.TabIndex = 14;
+            this.txtUsername.Texts = "";
+            this.txtUsername.UnderlinedStyle = false;
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 500);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(800, 490);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.pbxBeMyPet);
+            this.Controls.Add(this.pbxBackground);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.lblklogin);
             this.Controls.Add(this.btnlogin);
-            this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.lblpassword);
-            this.Controls.Add(this.txtusername);
             this.Controls.Add(this.lblusername);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.panelRight);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBeMyPet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxBackground)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblusername;
-        private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.Label lblpassword;
-        private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.LinkLabel lblklogin;
         private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.PictureBox pbxBackground;
+        private System.Windows.Forms.PictureBox pbxBeMyPet;
+        private RJControls.RJTextBox txtPassword;
+        private RJControls.RJTextBox txtUsername;
     }
 }
