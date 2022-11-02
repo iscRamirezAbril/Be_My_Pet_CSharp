@@ -73,9 +73,29 @@ namespace BeMyPet.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackgroundRegister {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundRegister", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BeMyPet {
             get {
                 object obj = ResourceManager.GetObject("BeMyPet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CerrarPestaña {
+            get {
+                object obj = ResourceManager.GetObject("CerrarPestaña", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

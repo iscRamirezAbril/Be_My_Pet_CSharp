@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace BeMyPet
 {
-    public partial class FrmRegister : Form
+    public partial class FrmWelcome : Form
     {
-        public FrmRegister()
+        public FrmWelcome()
         {
             InitializeComponent();
         }
-
     }
 }
