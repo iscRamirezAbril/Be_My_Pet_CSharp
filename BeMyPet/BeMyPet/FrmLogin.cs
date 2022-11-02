@@ -29,12 +29,15 @@ namespace BeMyPet
         public FrmLogin()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 15, 15));       
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-           
+            btnLogin.BackColor = Color.FromArgb(93, 208, 216);
+            btnLogin.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnLogin.Width, btnLogin.Height, 10, 10));
+            btnCancel.BackColor = Color.FromArgb(225, 17, 17);
+            btnCancel.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnCancel.Width, btnCancel.Height, 10, 10));
         }
 
         private void pbxBackground_MouseDown(object sender, MouseEventArgs e)
