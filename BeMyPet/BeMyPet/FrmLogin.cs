@@ -16,5 +16,10 @@ namespace BeMyPet
         {
             InitializeComponent();
         }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+            panelRight.BackColor = Color.FromArgb(224, 255, 255);
+        }
     }
 }
