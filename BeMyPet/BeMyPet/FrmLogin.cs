@@ -45,5 +45,32 @@ namespace BeMyPet
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string[] Consult = new string[7];
+            Client Client = new Client();
+
+            MessageBox.Show(txtUsername.Texts, "Bien", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+
+            if (!Client.ValidUser(txtUsername.Texts))
+            {
+                MessageBox.Show("Ese usuario existe", "Bien", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                if (!Client.Login(txtUsername.Texts, txtPassword.Texts))
+                {
+                    MessageBox.Show("Sesión iniciada correctamente", "Bien", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show("No se inicio sesión correctamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ese usuario no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

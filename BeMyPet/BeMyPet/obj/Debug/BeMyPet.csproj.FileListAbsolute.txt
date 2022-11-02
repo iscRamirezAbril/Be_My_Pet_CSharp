@@ -10,3 +10,5 @@ C:\Users\corona9955\Source\Repos\iscRamirezAbril\Be_My_Pet_CSharp\BeMyPet\BeMyPe
 C:\Users\corona9955\Source\Repos\iscRamirezAbril\Be_My_Pet_CSharp\BeMyPet\BeMyPet\obj\Debug\BeMyPet.exe
 C:\Users\corona9955\Source\Repos\iscRamirezAbril\Be_My_Pet_CSharp\BeMyPet\BeMyPet\obj\Debug\BeMyPet.pdb
 C:\Users\corona9955\Source\Repos\iscRamirezAbril\Be_My_Pet_CSharp\BeMyPet\BeMyPet\obj\Debug\BeMyPet.RJControls.RJTextBox.resources
+C:\Users\corona9955\Source\Repos\iscRamirezAbril\Be_My_Pet_CSharp\BeMyPet\BeMyPet\obj\Debug\BeMyPet.FrmRegister.resources
+C:\Users\corona9955\Source\Repos\iscRamirezAbril\Be_My_Pet_CSharp\BeMyPet\BeMyPet\obj\Debug\BeMyPet.FrmWelcome.resources

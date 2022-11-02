@@ -37,8 +37,8 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.pbxBeMyPet = new System.Windows.Forms.PictureBox();
             this.pbxBackground = new System.Windows.Forms.PictureBox();
-            this.txtPassword = new BeMyPet.RJControls.RJTextBox();
             this.txtUsername = new BeMyPet.RJControls.RJTextBox();
+            this.txtPassword = new BeMyPet.RJControls.RJTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBeMyPet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxBackground)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +86,7 @@
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // lblkLogin
             // 
@@ -135,28 +136,6 @@
             this.pbxBackground.TabStop = false;
             this.pbxBackground.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbxBackground_MouseDown);
             // 
-            // txtPassword
-            // 
-            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPassword.BorderColor = System.Drawing.Color.Silver;
-            this.txtPassword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPassword.BorderRadius = 10;
-            this.txtPassword.BorderSize = 1;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
-            this.txtPassword.Location = new System.Drawing.Point(54, 218);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPassword.Multiline = false;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Padding = new System.Windows.Forms.Padding(7);
-            this.txtPassword.PasswordChar = false;
-            this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPassword.PlaceholderText = "Password";
-            this.txtPassword.Size = new System.Drawing.Size(320, 31);
-            this.txtPassword.TabIndex = 13;
-            this.txtPassword.Texts = "";
-            this.txtPassword.UnderlinedStyle = false;
-            // 
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.SystemColors.Window;
@@ -178,6 +157,28 @@
             this.txtUsername.TabIndex = 14;
             this.txtUsername.Texts = "";
             this.txtUsername.UnderlinedStyle = false;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.SystemColors.Window;
+            this.txtPassword.BorderColor = System.Drawing.Color.Silver;
+            this.txtPassword.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPassword.BorderRadius = 10;
+            this.txtPassword.BorderSize = 1;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.DimGray;
+            this.txtPassword.Location = new System.Drawing.Point(54, 218);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Multiline = false;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Padding = new System.Windows.Forms.Padding(7);
+            this.txtPassword.PasswordChar = true;
+            this.txtPassword.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.Size = new System.Drawing.Size(320, 31);
+            this.txtPassword.TabIndex = 13;
+            this.txtPassword.Texts = "";
+            this.txtPassword.UnderlinedStyle = false;
             // 
             // FrmLogin
             // 
